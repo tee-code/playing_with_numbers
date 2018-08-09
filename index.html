@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+<link rel = "stylesheet" href = "style.css" />
+<title>My PRIME|ODD|EVEN CALCULATOR & GENERATOR</title>
+<meta charset = "utf-8" name = "viewport" content = "width = device-width, initial-scale = 1.0" />
+</head>
+<body>
+<div class = "background">
+	<div class = "wrapper">
+		<header>
+			<img src = "images_24.jpeg" id = "img1" width = "50px"/>
+			<h2>PRIME|ODD|EVEN CALCULATOR & GENERATOR</h2>
+			<img src = "images_26.jpeg" id = "img2" width = "50px"/>
+		</header>
+		<p id = "merry">Merry Xmas and Happy New Year to you all!!!</p>
+		<nav>
+			<div id = "screen"></div>
+		</nav>
+		<section>
+		<article>
+			<div id = "POE">
+				<form>
+					<input type = "radio" name = "PRIME|ODD|EVEN" id = "even" checked><label>EVEN</label>
+					<input type = "radio" name = "PRIME|ODD|EVEN" id = "odd"><label>ODD</label>
+					<input type = "radio" name = "PRIME|ODD|EVEN" id = "prime"><label>PRIME |CALCULATOR|</label>
+				</form>
+			</div>
+			<div id = "main">
+				<p>Select one of the above radio button</p>
+				<p>Select Even (if you want to determine even number)</p>
+				<p>Select Odd (if you want to determine odd number)</p>
+				<p>Select Prime (if you want to determine prime number)</p>
+				<hr>
+				<label>Enter the number: </label>
+				<br /><br />
+				<input type = "number" value = "" placeholder = "Enter the number you want to determine" id = "userInput" />
+				<br /><br />
+				<button type = "button" value = "CHECK" id = "submit" onclick = "calculate()" >CHECK</button>
+				<button type = "button" value = "CLEAR" id = "clear" onclick = "clearScreen()">CLEAR</button>
+				<br />
+			</div>
+		</article>
+		<article>
+			<div id = "POE">
+				<form>
+					<input type = "radio" name = "generate" id = "Geven" checked><label>EVEN</label>
+					<input type = "radio" name = "generate" id = "Godd"><label>ODD</label>
+					<input type = "radio" name = "generate" id = "Gprime"><label>PRIME |GENERATOR|</label>
+				</form>
+			</div>
+			<div id = "main2">
+				<p>Select one of the above radio button</p>
+				<p>Select Even (if you want to generate even number)</p>
+				<p>Select Odd (if you want to generate odd number)</p>
+				<p>Select Prime (if you want to generate prime number)</p>
+				<hr>
+				<label onclick = "on()">Enter the number: </label>
+				<table>
+					<tr>
+						<td><label>From: </label></td>
+						<td><input type = "number" value = "" placeholder = "Enter the number you want to generate" id = "from" /></td>
+						<br /><br />
+					</tr>
+					<tr>
+						<td><label>To: </label></td>
+						<td><input type = "number" value = "" placeholder = "Enter the number you want to generate" id = "to" /></td>
+					</tr>
+				</table>
+				<div id = "submitclear">
+					<button type = "button" value = "CHECK" id = "submit" onclick = "generate()" >GENERATE</button>
+					<button type = "button" value = "CLEAR" id = "clear" onclick = "clearGenerate()">CLEAR</button>
+				</div>
+			</div>
+		</article>
+		</section>
+		<footer>
+		<p>Designed by:Odekunle Oluwatobiloba (teecode Creation|08096733464)</p>
+		</footer>
+	</div>
+</div>
+<script type = "text/javascript" src = "script.js"></script>
+</body>
+</html>
